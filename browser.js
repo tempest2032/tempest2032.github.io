@@ -140,4 +140,4 @@ window.addEventListener('error', event => fail(event.error || event.message));
 window.addEventListener('unhandledrejection', event => fail(event.reason));
 
 // Generated bindings cache the audio constructor, so import them after wrapping it.
-import('./tempest2032.js?v=7f72da37').then(({ default: init }) => init()).catch(fail);
+import('./tempest2032.js?v=00181b0f').then(({ default: init }) => init()).catch(fail);
