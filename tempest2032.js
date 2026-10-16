@@ -2318,7 +2318,7 @@ async function __wbg_init(module_or_path) {
     }
 
     if (module_or_path === undefined) {
-        module_or_path = new URL('tempest2032_bg.wasm', import.meta.url);
+        module_or_path = new URL('tempest2032_bg.wasm?v=3d2975f0', import.meta.url);
     }
     const imports = __wbg_get_imports();
 

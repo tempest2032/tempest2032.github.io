@@ -1,4 +1,4 @@
-import { touchControls } from './touch.js?v=86a43c51';
+import { touchControls } from './touch.js?v=3d2975f0';
 
 const player = document.querySelector('#player');
 const canvas = document.querySelector('#game');
@@ -151,5 +151,13 @@ document.addEventListener('fullscreenchange', () => {
 window.addEventListener('error', event => fail(event.error || event.message));
 window.addEventListener('unhandledrejection', event => fail(event.reason));
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' }).catch(error => {
+      console.warn('Offline installation is unavailable:', error);
+    });
+  });
+}
+
 // Generated bindings cache the audio constructor, so import them after wrapping it.
-import('./tempest2032.js?v=86a43c51').then(({ default: init }) => init()).catch(fail);
+import('./tempest2032.js?v=3d2975f0').then(({ default: init }) => init()).catch(fail);
