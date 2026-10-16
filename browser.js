@@ -1,4 +1,4 @@
-import { touchControls } from './touch.js?v=c3a76782';
+import { touchControls } from './touch.js?v=77582b24';
 
 const player = document.querySelector('#player');
 const canvas = document.querySelector('#game');
@@ -10,7 +10,7 @@ const touch = touchControls(player, canvas);
 function controls() {
   return touch.enabled
     ? '\n\nSlide your thumb in the left area to steer. Lift to stop.\nHold Fire to shoot; slide onto Jump or Zapper to use them.\nTap the playfield to pause, then tap Resume, Restart, or Exit.\nSettings is in the top-left corner of Welcome.\nSlide up/down in menus and warps. OK / Back in menus.'
-    : '\n\nMove: arrows / A D · Fire: Space / Z\nJump: X · Superzapper: C\nPause / configuration: P · FPS: F3 · Fullscreen: F\nConfirm: Enter · Back: Esc\nClick the playfield to pause; click a pause-menu choice to activate it.\n\nControllers supported. Press a controller button to connect.';
+    : '\n\nMove: arrows / A D · Fire: Space / Z\nJump: X · Superzapper: C\nPause / configuration: P · FPS: F3 · Fullscreen: F\nConfirm: Enter · Back: Esc\n\nControllers supported. Press a controller button to connect.';
 }
 const audioContexts = new Set();
 let loaded = false;
@@ -175,4 +175,4 @@ if ('serviceWorker' in navigator) {
 }
 
 // Generated bindings cache the audio constructor, so import them after wrapping it.
-import('./tempest2032.js?v=c3a76782').then(({ default: init }) => init()).catch(fail);
+import('./tempest2032.js?v=77582b24').then(({ default: init }) => init()).catch(fail);
