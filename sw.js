@@ -1,7 +1,7 @@
 const ROOT = new URL('./', self.location.href);
 const PREFIX = `tempest2032:${ROOT.pathname}:`;
-const CACHE = `${PREFIX}dee33f28`;
-const FILES = ["./LICENSE", "./NOTICE", "./browser.js?v=dee33f28", "./favicon.png", "./icon-192.png", "./icon-512.png", "./index.html", "./manifest.webmanifest", "./preview.png", "./style.css?v=dee33f28", "./tempest2032.js?v=dee33f28", "./tempest2032_bg.wasm?v=dee33f28", "./touch.js?v=dee33f28"];
+const CACHE = `${PREFIX}3442fbaa`;
+const FILES = ["./LICENSE", "./NOTICE", "./browser.js?v=3442fbaa", "./favicon.png", "./icon-192.png", "./icon-512.png", "./index.html", "./manifest.webmanifest", "./preview.png", "./style.css?v=3442fbaa", "./tempest2032.js?v=3442fbaa", "./tempest2032_bg.wasm?v=3442fbaa", "./touch.js?v=3442fbaa"];
 const ASSETS = new Set(FILES.map(file => new URL(file, ROOT).href));
 
 self.addEventListener('install', event => {
