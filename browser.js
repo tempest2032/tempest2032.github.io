@@ -1,4 +1,4 @@
-import { touchControls } from './touch.js?v=2dda7c4d';
+import { touchControls } from './touch.js?v=f9bb0fee';
 
 const player = document.querySelector('#player');
 const canvas = document.querySelector('#game');
@@ -175,4 +175,4 @@ if ('serviceWorker' in navigator) {
 }
 
 // Generated bindings cache the audio constructor, so import them after wrapping it.
-import('./tempest2032.js?v=2dda7c4d').then(({ default: init }) => init()).catch(fail);
+import('./tempest2032.js?v=f9bb0fee').then(({ default: init }) => init()).catch(fail);
